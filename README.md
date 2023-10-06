@@ -1,5 +1,6 @@
 # Google-prep-material
 
+**Algorithms**
 1. Algorithmic Design Techniques
 source: https://www.geeksforgeeks.org/algorithms-design-techniques/
 
@@ -333,4 +334,9 @@ source: https://www.geeksforgeeks.org/algorithms-design-techniques/
                9. Select a Random Node from a tree with equal probability
                10. Freivald’s Algorithm to check if a matrix is product of two
                11. Random Acyclic Maze Generator with given Entry and Exit point
-        3. 
+
+
+----------------------------------------------------------------
+**Data Structures:**
+
+![img_1.png](img_1.png)
