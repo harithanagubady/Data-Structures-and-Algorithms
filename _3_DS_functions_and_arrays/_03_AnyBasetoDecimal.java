@@ -1,6 +1,6 @@
 import java.util.*;
 
-public class _3_AnyBasetoDecimal {
+public class _03_AnyBasetoDecimal {
 
     public static void main(String[] args) {
         Scanner scn = new Scanner(System.in);

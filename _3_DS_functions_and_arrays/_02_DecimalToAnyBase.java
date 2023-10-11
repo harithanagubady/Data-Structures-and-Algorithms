@@ -1,6 +1,6 @@
 import java.util.*;
 
-public class _2_DecimalToAnyBase {
+public class _02_DecimalToAnyBase {
 
     public static void main(String[] args) {
         Scanner scn = new Scanner(System.in);

@@ -1,6 +1,6 @@
 import java.util.Scanner;
 
-public class _5_AnyBaseAddition {
+public class _05_AnyBaseAddition {
 
     public static void main(String[] args) {
         Scanner scn = new Scanner(System.in);

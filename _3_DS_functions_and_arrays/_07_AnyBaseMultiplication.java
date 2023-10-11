@@ -1,6 +1,6 @@
 import java.util.*;
 
-public class _7_AnyBaseMultiplication {
+public class _07_AnyBaseMultiplication {
 
     public static void main(String[] args) {
         Scanner scn = new Scanner(System.in);

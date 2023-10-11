@@ -1,6 +1,6 @@
 import java.util.*;
 
-public class _4_AnyBaseToAnyBase {
+public class _04_AnyBaseToAnyBase {
 
     public static void main(String[] args) {
         Scanner scn = new Scanner(System.in);

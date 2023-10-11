@@ -1,6 +1,6 @@
 import java.util.*;
 
-public class _1_DigitFrequency {
+public class _01_DigitFrequency {
 
     public static void main(String[] args) {
         Scanner scn = new Scanner(System.in);

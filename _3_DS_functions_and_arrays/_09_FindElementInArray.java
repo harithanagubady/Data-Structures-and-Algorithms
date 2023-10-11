@@ -1,6 +1,6 @@
 import java.util.*;
 
-public class _9_FindElementInArray {
+public class _09_FindElementInArray {
 
     public static void main(String[] args) throws Exception {
         Scanner scanner = new Scanner(System.in);

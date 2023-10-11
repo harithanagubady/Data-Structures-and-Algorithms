@@ -1,6 +1,6 @@
 import java.util.*;
 
-public class _8_SpanofArray {
+public class _08_SpanofArray {
 
     public static void main(String[] args) throws Exception {
         Scanner scn = new Scanner(System.in);

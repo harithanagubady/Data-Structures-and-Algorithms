@@ -1,6 +1,6 @@
 import java.util.Scanner;
 
-public class _6_AnyBaseSubtraction {
+public class _06_AnyBaseSubtraction {
 
     public static void main(String[] args) {
         Scanner scn = new Scanner(System.in);
