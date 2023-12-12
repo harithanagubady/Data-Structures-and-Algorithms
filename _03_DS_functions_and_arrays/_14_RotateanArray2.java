@@ -6,7 +6,7 @@ public class _14_RotateanArray2 {
         StringBuilder sb = new StringBuilder();
 
         for (int val : a) {
-            sb.append(val + " ");
+            sb.append(val).append(" ");
         }
         System.out.println(sb);
     }
@@ -28,8 +28,9 @@ public class _14_RotateanArray2 {
 
         k = k % n;
         if (k < 0) {
-            k = (k + n) % n;
+            k = (k + n);
         }
+        System.out.println("rotations: " + k);
         reverse(a, 0, n - k - 1);
         reverse(a, n - k, n - 1);
         reverse(a, 0, n - 1);
