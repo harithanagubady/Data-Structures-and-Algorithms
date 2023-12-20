@@ -7,6 +7,7 @@ public class Main {
         int num = scanner.nextInt();
 
         for (int i = 2; i * i <= num; i++) {
+            System.out.println("num" + num);
             while (num % i == 0) {
                 num /= i;
                 System.out.println(i);
