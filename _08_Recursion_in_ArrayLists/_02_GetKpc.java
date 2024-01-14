@@ -16,21 +16,21 @@ public class _02_GetKpc {
             "yz"
     };
 
-    public static ArrayList<String> getKPC(String str) {
+    public static ArrayList<String> getKPC(String str) { //578
         if(str.length() == 0) {
             String initialStr = "";
             ArrayList<String> l = new ArrayList<>();
             l.add(initialStr);
             return l;
         }
-        char ch = str.charAt(0);
+        char ch = str.charAt(0); //5
         str = str.substring(1);
-        ArrayList<String> substrs = getKPC(str);
-        String code = codes[ch - '0'];
+        ArrayList<String> substrs = getKPC(str); //78
+        String code = codes[ch - '0'];    //"mno"
         ArrayList<String> arrList = new ArrayList<>();
-        for (String substr : substrs) {
-            for (char c : code.toCharArray()) {
-                arrList.add(c + substr);
+        for (String substr : substrs) { // tv, tw, tx, uv, uw, ux
+            for (char c : code.toCharArray()) { // m, n, o
+                arrList.add(c + substr); //mtv, mtw, mtx, ....., mux, ntv, ntw, ntx, .... nux, otv, otw, otx, ...., oux
             }
         }
         return arrList;
