@@ -16,24 +16,14 @@ public class _03_GetStairPaths {
             paths.add("");
             return paths;
         }
-        if (n < 0) {
-            return new ArrayList<>();
-        }
-
-        ArrayList<String> paths1 = getStairPaths(n - 1);
-        ArrayList<String> paths2 = getStairPaths(n - 2);
-        ArrayList<String> paths3 = getStairPaths(n - 3);
 
         ArrayList<String> paths = new ArrayList<>();
 
-        for (String path : paths1) {
-            paths.add("1" + path);
-        }
-        for (String path : paths2) {
-            paths.add("2" + path);
-        }
-        for (String path : paths3) {
-            paths.add("3" + path);
+        for (int i = 1; i <= n; i++) {
+            ArrayList<String> ps = getStairPaths(n - i);
+            for (String path : ps) {
+                paths.add(i + path);
+            }
         }
 
         return paths;

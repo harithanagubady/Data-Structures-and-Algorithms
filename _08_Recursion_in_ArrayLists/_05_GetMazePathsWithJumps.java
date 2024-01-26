@@ -18,10 +18,6 @@ public class _05_GetMazePathsWithJumps {
             return newList;
         }
 
-        if (sr > dr || sc > dc) {
-            return new ArrayList<>();
-        }
-
         ArrayList<String> paths = new ArrayList<>();
 
 
