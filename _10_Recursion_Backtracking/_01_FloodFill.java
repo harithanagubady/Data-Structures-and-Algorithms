@@ -2,7 +2,7 @@ import java.util.Scanner;
 
 public class _01_FloodFill {
 
-    public static void main(String[] args) throws InterruptedException {
+    public static void main(String[] args) {
         Scanner scn = new Scanner(System.in);
         int n = scn.nextInt();
         int m = scn.nextInt();
@@ -17,22 +17,23 @@ public class _01_FloodFill {
     }
 
     // asf -> answer so far
-    public static void floodfill(int[][] maze, int sr, int sc, String asf, boolean[][] visited) throws InterruptedException {
-        if (sr < 0 || sc < 0 || sr > maze.length - 1 || sc > maze[0].length - 1 || visited[sr][sc] || maze[sr][sc] == 1) {
+    public static void floodfill(int[][] maze, int sr, int sc, String asf, boolean[][] visited) {
+        if (sr < 0 || sc < 0 || sr > maze.length - 1 || sc > maze[0].length - 1 || maze[sr][sc] == 1 || visited[sr][sc]) {
             return;
         }
 
         if(sr == maze.length - 1 && sc == maze[0].length - 1) {
             System.out.println(asf);
-            Thread.sleep(1000);
             return;
         }
 
-        visited[sr][sc] = true;
+        visited[sr][sc]  = true;
+
         floodfill(maze, sr - 1, sc, asf + "t", visited);
         floodfill(maze, sr, sc - 1, asf + "l", visited);
         floodfill(maze, sr + 1, sc, asf + "d", visited);
         floodfill(maze, sr, sc + 1, asf + "r", visited);
-        visited[sr][sc] = false;
+
+        visited[sr][sc]  = false;
     }
 }
