@@ -16,8 +16,6 @@ public class _03_PrintStairPaths {
             return;
         }
 
-        ArrayList<String> paths = new ArrayList<>();
-
         for (int i = 1; i <= n; i++) {
             printStairPaths(n - i, i + ans);
         }

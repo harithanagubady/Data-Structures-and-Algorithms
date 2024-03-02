@@ -15,14 +15,16 @@ public class _03_Multisolver {
     }
 
     static class Pair implements Comparable<Pair> {
-        int wsf;
+
+        Integer wsf;
         String psf;
 
-        Pair(int wsf, String psf) {
+        public Pair(Integer wsf, String psf) {
             this.wsf = wsf;
             this.psf = psf;
         }
 
+        @Override
         public int compareTo(Pair o) {
             return this.wsf - o.wsf;
         }
@@ -76,5 +78,45 @@ public class _03_Multisolver {
 
     public static void multisolver(ArrayList<Edge>[] graph, int src, int dest, boolean[] visited, int criteria, int k, String psf, int wsf) {
 
+        if (src == dest) {
+
+            if (wsf < spathwt) {
+                spathwt = wsf;
+                spath = psf;
+            }
+
+            if (wsf > lpathwt) {
+                lpathwt = wsf;
+                lpath = psf;
+            }
+
+            if (wsf > criteria && wsf < cpathwt) {
+                cpathwt = wsf;
+                cpath = psf;
+            }
+
+            if (wsf < criteria && wsf > fpathwt) {
+                fpathwt = wsf;
+                fpath = psf;
+            }
+
+            if (pq.size() < k) {
+                pq.add(new Pair(wsf, psf));
+            } else {
+                if (pq.peek().wsf < wsf) {
+                    pq.poll();
+                    pq.add(new Pair(wsf, psf));
+                }
+            }
+            return;
+        }
+
+        visited[src] = true;
+        for (Edge e : graph[src]) {
+            if (!visited[e.nbr]) {
+                multisolver(graph, e.nbr, dest, visited, criteria, k, psf + " " + e.nbr, e.wt + wsf);
+            }
+        }
+        visited[src] = false;
     }
 }

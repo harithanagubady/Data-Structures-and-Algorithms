@@ -1,6 +1,8 @@
 import java.io.BufferedReader;
 import java.io.InputStreamReader;
 import java.util.ArrayList;
+import java.util.LinkedList;
+import java.util.List;
 
 public class _02_PrintAllPaths {
 
@@ -42,23 +44,36 @@ public class _02_PrintAllPaths {
 
         String s = "";
         boolean[] visited = new boolean[vtces];
-        printAllPaths(graph, src, dest, s, visited);
+        List<LinkedList<Integer>> res = findAllPaths(graph, src, dest, visited);
+        for (LinkedList<Integer> l : res) {
+            for (int i : l) {
+                System.out.print(i + " ");
+            }
+            System.out.println();
+        }
     }
 
-    private static void printAllPaths(ArrayList<Edge>[] graph, int src, int dest, String s, boolean[] visited) {
-        s+=src;
+    private static List<LinkedList<Integer>> findAllPaths(ArrayList<Edge>[] graph, int src, int dest, boolean[] visited) {
+
         if (src == dest) {
-            System.out.println(s);
-            return;
+            List<LinkedList<Integer>> newList = new ArrayList<>();
+            LinkedList<Integer> path = new LinkedList<>();
+            path.add(src);
+            newList.add(path);
+            return newList;
         }
-
         visited[src] = true;
-
+        List<LinkedList<Integer>> currPaths = new ArrayList<>();
         for (Edge e : graph[src]) {
-            if(!visited[e.nbr] ) {
-                printAllPaths(graph, e.nbr, dest, s, visited);
+            if (!visited[e.nbr]) {
+                List<LinkedList<Integer>> nbrPaths = findAllPaths(graph, e.nbr, dest, visited);
+                for (LinkedList<Integer> nbrPath : nbrPaths) {
+                    nbrPath.addFirst(src);
+                    currPaths.add(nbrPath);
+                }
             }
         }
         visited[src] = false;
+        return currPaths;
     }
 }

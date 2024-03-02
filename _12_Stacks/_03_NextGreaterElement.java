@@ -1,3 +1,4 @@
+import java.util.Arrays;
 import java.util.Stack;
 
 public class _03_NextGreaterElement {
@@ -19,14 +20,20 @@ public class _03_NextGreaterElement {
 
     public static int[] solution1(int[] arr, int[] newArr, Stack<Integer> stack) {
         for (int i = arr.length - 1; i >= 0; i--) {
+
+            //POP SMALLEST
             while (!stack.isEmpty() && arr[i] > stack.peek()) {
                 stack.pop();
             }
+
+            //PRINT ANS
             if (stack.isEmpty()) {
                 newArr[i] = -1;
             } else {
                 newArr[i] = stack.peek();
             }
+
+            //PUSH CURRENT
             stack.push(arr[i]);
         }
         return newArr;

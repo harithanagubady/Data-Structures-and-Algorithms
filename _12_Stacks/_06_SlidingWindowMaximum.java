@@ -1,6 +1,6 @@
 import java.util.Stack;
 
-public class _04_SlidingWindowMaximum {
+public class _06_SlidingWindowMaximum {
 
     public static void main(String[] args) {
         int[] arr = {2, 9, 3, 8, 1, 7, 12, 6, 14, 4, 32, 0, 7, 19, 8, 12, 6};
