@@ -24,7 +24,7 @@ public class _02_TargetSumSubSets {
             return;
         }
 
-        printTargetSumSubsets(arr, idx + 1, tar, set + arr[idx] + ", ", sos + arr[idx]);
         printTargetSumSubsets(arr, idx + 1, tar, set, sos);
+        printTargetSumSubsets(arr, idx + 1, tar, set + arr[idx] + ", ", sos + arr[idx]);
     }
 }
