@@ -4,6 +4,9 @@ import java.util.ArrayList;
 
 
 //DFS Algorithm
+/*
+Leetcode https://leetcode.com/problems/find-if-path-exists-in-graph/description/
+ */
 public class _01_HasPath {
 
     static class Edge {
@@ -45,9 +48,54 @@ public class _01_HasPath {
         System.out.println(hasPath(graph, src, dest, visited));
     }
 
-    private static boolean hasPath(ArrayList<Edge>[] graph, int src, int desc, boolean[] visited) {
+    private static boolean hasPath(ArrayList<Edge>[] graph, int src, int dest, boolean[] visited) {
 
-        if (src == desc) return true;
+        if (src == dest) {
+            return true;
+        }
+
+        visited[src] = true;
+
+        for (Edge e : graph[src]) {
+            System.out.println(src + " - " + e.nbr);
+            if (!visited[e.nbr]) {
+                if(hasPath(graph, e.nbr, dest, visited)) {
+                    return true;
+                }
+            }
+        }
+        //visited[src] = false;
+        return false;
+    }
+}
+
+
+
+
+/*
+5
+5
+0 1 10
+1 2 10
+2 3 10
+2 4 20
+4 1 10
+1
+4
+ */
+
+
+
+
+
+
+
+
+
+
+/*
+
+if (src == desc) return true;
         visited[src] = true;
         for (Edge e : graph[src]) {
             System.out.println(e.src + " " + e.nbr);
@@ -56,5 +104,4 @@ public class _01_HasPath {
         }
         visited[src] = false;
         return false;
-    }
-}
+ */
