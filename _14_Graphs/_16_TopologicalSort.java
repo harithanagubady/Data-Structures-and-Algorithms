@@ -4,6 +4,16 @@ import java.io.InputStreamReader;
 import java.util.ArrayList;
 import java.util.Stack;
 
+/*
+You are given a directed acyclic graph.
+You are required to print the order in which tasks could be done.
+The task that should be done at last should be printed first and
+the task that should be done at first should be printed last
+This is called topological sort
+
+Topological sort -> A permutation of vertices for a directed acyclic graph is called topological sort
+if for all directed edges uv, u appears before v in the graph
+ */
 public class _16_TopologicalSort {
 
     public static class Edge {
@@ -36,18 +46,19 @@ public class _16_TopologicalSort {
         Stack<Integer> st = new Stack<>();
         for (int i = 0; i < v; i++) {
             if (!visited[i])
-                topologicalSort(graph, i, visited, st);
+                topologicalSortDFS(graph, i, visited, st);
         }
         while (st.size() > 0) {
             System.out.println(st.pop());
         }
     }
 
-    private static void topologicalSort(ArrayList<Edge>[] graph, int src, boolean[] visited, Stack<Integer> st) {
+    private static void topologicalSortDFS(ArrayList<Edge>[] graph, int src, boolean[] visited, Stack<Integer> st) {
+        //post order traversal
         visited[src] = true;
         for (Edge e : graph[src]) {
             if (!visited[e.nbr]) {
-                topologicalSort(graph, e.nbr, visited, st);
+                topologicalSortDFS(graph, e.nbr, visited, st);
             }
         }
         st.push(src);

@@ -1,6 +1,7 @@
 import java.io.BufferedReader;
 import java.io.InputStreamReader;
 import java.util.ArrayList;
+import java.util.Stack;
 
 
 //DFS Algorithm
@@ -45,10 +46,11 @@ public class _01_HasPath {
         int dest = Integer.parseInt(br.readLine());
 
         boolean[] visited = new boolean[vertices];
-        System.out.println(hasPath(graph, src, dest, visited));
+        //System.out.println(hasPathDFS(graph, src, dest, visited));
+        System.out.println(hasPathIterativeDFS(graph, src, dest, visited));
     }
 
-    private static boolean hasPath(ArrayList<Edge>[] graph, int src, int dest, boolean[] visited) {
+    private static boolean hasPathDFS(ArrayList<Edge>[] graph, int src, int dest, boolean[] visited) {
 
         if (src == dest) {
             return true;
@@ -57,14 +59,34 @@ public class _01_HasPath {
         visited[src] = true;
 
         for (Edge e : graph[src]) {
-            System.out.println(src + " - " + e.nbr);
             if (!visited[e.nbr]) {
-                if(hasPath(graph, e.nbr, dest, visited)) {
+                if(hasPathDFS(graph, e.nbr, dest, visited)) {
                     return true;
                 }
             }
         }
-        //visited[src] = false;
+        return false;
+    }
+
+    private static boolean hasPathIterativeDFS(ArrayList<Edge>[] graph, int src, int dest, boolean[] visited) {
+
+
+        Stack<Integer> st = new Stack<>();
+        int v = src;
+        st.push(v);
+        visited[v] = true;
+        while (!st.isEmpty()) {
+            v = st.pop();
+            if (v == dest) {
+                return true;
+            }
+            for (Edge e : graph[v]) {
+                if (!visited[e.nbr]) {
+                    visited[e.nbr] = true;
+                    st.push(e.nbr);
+                }
+            }
+        }
         return false;
     }
 }

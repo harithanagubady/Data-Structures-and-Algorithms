@@ -1,6 +1,17 @@
 import java.io.*;
 import java.util.*;
 
+/*
+You are given a graph, a src vertex, a destination vertex
+You are given a number named "criteria" and a number "k"
+You are required to find and print the values of
+1) smallest path and it's weight separated by an "@"
+2) largest path and it's weight separated by an "@"
+3) Just Larger path (than criteria in terms of weight) and it's weight separated by an "@"
+4) Just Smaller path (than criteria in terms of weight) and it's weight separated by an "@"
+5) Kth largest path and it's weight separated by an "@"
+ */
+
 public class _03_Multisolver {
     static class Edge {
         int src;
@@ -65,7 +76,6 @@ public class _03_Multisolver {
         System.out.println(k + "th largest path = " + pq.peek().psf + "@" + pq.peek().wsf);
     }
 
-
     static String spath;
     static Integer spathwt = Integer.MAX_VALUE;
     static String lpath;
@@ -120,3 +130,19 @@ public class _03_Multisolver {
         visited[src] = false;
     }
 }
+
+/*
+
+5
+6
+0 1 5
+1 2 6
+2 3 1
+1 4 36
+3 4 8
+2 4 29
+0
+4
+21
+3
+ */

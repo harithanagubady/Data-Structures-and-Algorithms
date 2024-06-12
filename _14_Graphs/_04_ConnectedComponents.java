@@ -5,6 +5,17 @@ import java.util.ArrayList;
 import java.util.LinkedList;
 import java.util.List;
 
+/*
+7
+5
+0 1 10
+2 3 10
+4 5 10
+5 6 10
+4 6 10
+
+o/p: [[0,1],[2,3],[4,5,6]
+ */
 public class _04_ConnectedComponents {
 
     static class Edge {
