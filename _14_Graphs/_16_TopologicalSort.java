@@ -1,8 +1,7 @@
 import java.io.BufferedReader;
 import java.io.IOException;
 import java.io.InputStreamReader;
-import java.util.ArrayList;
-import java.util.Stack;
+import java.util.*;
 
 /*
 You are given a directed acyclic graph.
@@ -49,8 +48,14 @@ public class _16_TopologicalSort {
                 topologicalSortDFS(graph, i, visited, st);
         }
         while (st.size() > 0) {
-            System.out.println(st.pop());
+            System.out.print(st.pop() + " ");
         }
+        System.out.println();
+        List<Integer> l = kahnsAlgorithm(graph, 0, v);
+        for (int i : l) {
+            System.out.print(i + " ");
+        }
+        System.out.println();
     }
 
     private static void topologicalSortDFS(ArrayList<Edge>[] graph, int src, boolean[] visited, Stack<Integer> st) {
@@ -63,19 +68,48 @@ public class _16_TopologicalSort {
         }
         st.push(src);
     }
+
+    private static List<Integer> kahnsAlgorithm(ArrayList<Edge>[] graph, int src, int v) {
+        Queue<Integer> zeroInDegree = new LinkedList<>();
+        int[] inDegreeCount = new int[v];
+        for (ArrayList<Edge> edges : graph) {
+            for (Edge e : edges) {
+                inDegreeCount[e.nbr]++;
+            }
+        }
+
+        for (int i = 0; i < v; i++) {
+            if (inDegreeCount[i] == 0) {
+                zeroInDegree.add(i);
+            }
+        }
+        List<Integer> res = new ArrayList<>();
+        while (zeroInDegree.size() > 0) {
+            int node = zeroInDegree.poll();
+            res.add(node);
+            for (Edge e : graph[node]) {
+                inDegreeCount[e.nbr]--;
+                if (inDegreeCount[e.nbr] == 0) {
+                    zeroInDegree.add(e.nbr);
+                }
+            }
+        }
+        if (res.size() != v) {
+            System.out.println("There is cycle");
+            return new ArrayList<>();
+        }
+        return res;
+    }
 }
 
 
 /*
 
-7
-8
-0 3
+5
+5
 0 1
 1 2
 2 3
-4 3
-4 5
-5 6
-4 6
+3 4
+4 1
  */

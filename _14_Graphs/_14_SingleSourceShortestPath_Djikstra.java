@@ -2,6 +2,8 @@ import java.io.BufferedReader;
 import java.io.IOException;
 import java.io.InputStreamReader;
 import java.util.ArrayList;
+import java.util.Comparator;
+import java.util.List;
 import java.util.PriorityQueue;
 
 public class _14_SingleSourceShortestPath_Djikstra {
@@ -40,12 +42,17 @@ public class _14_SingleSourceShortestPath_Djikstra {
 
         boolean[] visited = new boolean[v];
         shortestPath(graph, src, visited);
+        int[] res = shortestPathNaiveApproach(graph, src, v);
+        for (int i : res) {
+            System.out.print(i + " ");
+        }
+        System.out.println();
     }
 
     //Djikstra's Algorithm
     private static void shortestPath(ArrayList<Edge>[] graph, int src, boolean[] visited) {
 
-        PriorityQueue<Pair> pq = new PriorityQueue<>();
+        PriorityQueue<Pair> pq = new PriorityQueue<>(Comparator.comparingInt(u -> u.wsf));
         pq.add(new Pair(src, "" + src, 0));
 
         while (pq.size() > 0) {
@@ -66,7 +73,31 @@ public class _14_SingleSourceShortestPath_Djikstra {
         }
     }
 
-    public static class Pair implements Comparable<Pair> {
+    private static int[] shortestPathNaiveApproach(ArrayList<Edge>[] graph, int src, int V) {
+
+        int[] res = new int[V];
+        for (int i = 0; i < V; i++) {
+            res[i] = Integer.MAX_VALUE;
+        }
+
+        PriorityQueue<Pair> pq = new PriorityQueue<>(V, Comparator.comparingInt(u -> u.wsf));
+        pq.add(new Pair(src, "" + src, 0));
+
+        res[src] = 0;
+        while (pq.size() > 0) {
+            Pair rem = pq.remove();
+
+            for (Edge e : graph[rem.v]) {
+                if (res[e.src] + e.wt < res[e.nbr]) {
+                    res[e.nbr] = res[e.src] + e.wt;
+                    pq.add(new Pair(e.nbr, rem.psf + e.nbr, rem.wsf + e.wt));
+                }
+            }
+        }
+        return res;
+    }
+
+    public static class Pair {
 
         int v;
         String psf;
@@ -79,10 +110,6 @@ public class _14_SingleSourceShortestPath_Djikstra {
             this.wsf = wsf;
         }
 
-        @Override
-        public int compareTo(Pair o) {
-            return this.wsf - o.wsf;
-        }
     }
 }
 

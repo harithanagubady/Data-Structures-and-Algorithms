@@ -1,6 +1,11 @@
-import java.util.Scanner;
+import java.util.*;
 
 public class _03_NQueens {
+
+    static ArrayList<String> l = new ArrayList<>();
+    static Set<Integer> ld = new HashSet<>();
+    static Set<Integer> rd = new HashSet<>();
+    static Set<Integer> cl = new HashSet<>();
 
     public static void main(String[] args) {
         Scanner scn = new Scanner(System.in);
@@ -9,6 +14,8 @@ public class _03_NQueens {
         int[][] arr = new int[n][n];
 
         printNQueens(arr, 0, "", 0);
+
+        printNQueensOptimised(0, n);
     }
 
     private static void printNQueens(int[][] chess, int idx, String psf, int row) {
@@ -45,5 +52,34 @@ public class _03_NQueens {
             }
         }
         return true;
+    }
+
+    private static void printNQueensOptimised(int row, int n) {
+
+        if(row == n) {
+            System.out.println(l);
+            return;
+        }
+
+        for (int col = 0; col < n; col++) {
+            StringBuilder str = new StringBuilder();
+            if(isItASafePlaceForQueen1(row, col)) {
+                ld.add(row - col);
+                rd.add(row + col);
+                cl.add(col);
+                str.append(row).append("-").append(col);
+                l.add(str.toString());
+                printNQueensOptimised(row + 1, n);
+                ld.remove(row - col);
+                rd.remove(row + col);
+                cl.remove(col);
+                l.remove(str.toString());
+            }
+        }
+    }
+
+    private static boolean isItASafePlaceForQueen1(int row, int col) {
+
+        return !ld.contains(row - col) && !rd.contains(row + col) && !cl.contains(col);
     }
 }
