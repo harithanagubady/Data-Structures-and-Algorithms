@@ -1,5 +1,16 @@
 import java.util.Scanner;
 
+/*
+
+n - rows
+m - columns
+n*m numbers of 2d array and the number is either 0 or 1
+start from top-left and reach to bottom right corner.
+Only four moves allowed - 't'(1-step up), 'l'(1-step left), 'd'(1-step down), 'r'(1-step right)
+You can only move to cells which have 0 value.
+You can't move out of the boundaries or in the cells which have 1 (1 means obstacle)
+Note: Make moves in the order 't','l','d','r'
+ */
 public class _01_FloodFill {
 
     public static void main(String[] args) {

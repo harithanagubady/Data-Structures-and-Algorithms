@@ -1,5 +1,16 @@
 import java.util.Scanner;
 
+
+/*
+Climb Stairs With Variable Jumps
+
+You are given a number n, representing number of stairs
+You are on 0th step and are required to climb to the top
+You are given n numbers, where ith element's value represents -
+till how far from the step you could jump in a single move
+You can ofcourse take fewer steps in the move
+You are required to print the number of different paths via which you can climb to the top
+ */
 public class _03_ClimbStairsWithJumps {
 
     public static void main(String[] args) {
