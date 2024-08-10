@@ -1,4 +1,11 @@
-# DSA Learning Structure:
+# OUTLINE
+
+* ### [DSA Topics](#dsa-topics)
+* ### [DSA Notes](#dsa-notes)
+* ### [Notes vs Problems Mapping](#notes-vs-problems-mapping)
+* ### [Abdul Bari Algorithms Playlist](#abdul-bari-algorithms-playlist)
+
+# DSA Topics:
 
 Checkout my article on substack:
 [What to learn in DSA?](https://open.substack.com/pub/nagubadyharitha/p/dsa-topics-for-preparation?utm_campaign=post&utm_medium=web)
