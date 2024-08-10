@@ -5,10 +5,11 @@
 * ### [Notes vs Problems Mapping](#notes-vs-problems-mapping)
 * ### [Abdul Bari Algorithms Playlist](#abdul-bari-algorithms-playlist)
 
+
 # DSA Topics:
 
 Checkout my article on substack:
-[What to learn in DSA?](https://open.substack.com/pub/nagubadyharitha/p/dsa-topics-for-preparation?utm_campaign=post&utm_medium=web)
+[**What to learn in DSA?**](https://open.substack.com/pub/nagubadyharitha/p/dsa-topics-for-preparation?utm_campaign=post&utm_medium=web)
 
 
 # DSA Notes:
@@ -32,7 +33,7 @@ It contains an overview of certain topics and some of the random solutions.
 You can find youtube link [**here**](https://youtube.com/playlist?list=PLDN4rrl48XKpZkf03iYFl-O29szjTrs_O&si=3bEHPg_VHNw6DH87)
 
 **Note**: _This notes may contain additional notes from other resources including this playlist_
-###  Notes 1. [_Introduction to Algorithms_](): 
+###  Notes 1. [_Introduction to Algorithms_](https://github.com/harithanagubady/Data-Structures-and-Algorithms/blob/c8e364209f09f9e4d1dce0164c7074c8bd5807e3/Notes/_02_Abdul%20Bari%20Algorithms%20Playlist/_01_Introduction%20to%20Algorithms(ft.%20Abdul%20Bari).pdf): 
      Topics include:-     
           1. Characteristics of Algorithms
                *  Priori Analysis and posteriori testing
@@ -50,7 +51,7 @@ You can find youtube link [**here**](https://youtube.com/playlist?list=PLDN4rrl4
           9. Comparison of Functions 
           10. Best, Worst, Average Case Analysis
 
-###  Notes 2. [_Disjoint Set/Union Find_](): 
+###  Notes 2. [_Disjoint Set/Union Find_](https://github.com/harithanagubady/Data-Structures-and-Algorithms/blob/c8e364209f09f9e4d1dce0164c7074c8bd5807e3/Notes/_02_Abdul%20Bari%20Algorithms%20Playlist/_02_Disjoint%20Set%20or%20Union%20Find%20(ft.%20Abdul%20Bari).pdf): 
      Topics include:-     
           1. Disjoint sets & operations
           2. Detecting a cycle
@@ -69,7 +70,7 @@ You can find youtube link [**here**](https://youtube.com/playlist?list=PLDN4rrl4
           8. Why choose Union Find over BFS/DFS?
           9. Job Sequencing Problem
 
-###  Notes 3. [_Divide and Conquer_]():
+###  Notes 3. [_Divide and Conquer_](https://github.com/harithanagubady/Data-Structures-and-Algorithms/blob/c8e364209f09f9e4d1dce0164c7074c8bd5807e3/Notes/_02_Abdul%20Bari%20Algorithms%20Playlist/_03_Divide%20And%20Conquer(ft.%20Abdul%20Bari).pdf):
      Topics include:-     
           1. Recurrence relations, Recursion tree method, Substitution/Backward Substitution/Induction method:
               1. Decreasing functions 
