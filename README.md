@@ -1,27 +1,102 @@
 # DSA Learning Structure:
 
 Checkout my article on substack:
-https://open.substack.com/pub/nagubadyharitha/p/dsa-topics-for-preparation?utm_campaign=post&utm_medium=web
+[What to learn in DSA?](https://open.substack.com/pub/nagubadyharitha/p/dsa-topics-for-preparation?utm_campaign=post&utm_medium=web)
 
 
 # DSA Notes:
 
-[Notes](https://github.com/harithanagubady/Data-Structures-and-Algorithms/tree/main/Notes)
+You can find the DSA notes [**here**](https://github.com/harithanagubady/Data-Structures-and-Algorithms/tree/main/Notes)
 
-[Getting Started](https://github.com/harithanagubady/Data-Structures-and-Algorithms/tree/main/Notes/Getting%20Started) is where you have all the initial materials to get started for learning DSA.
+[**Getting Started**](https://github.com/harithanagubady/Data-Structures-and-Algorithms/tree/main/Notes/Getting%20Started) is where you have all the initial materials to get started for learning DSA.
 It contains an overview of certain topics and some of the random solutions.
 
 
 # Notes vs Problems Mapping
 
-- * [Notes/Getting Started/_01_Leetcode 32 - Longest Valid Parenthesis.pdf](https://github.com/harithanagubady/Data-Structures-and-Algorithms/blob/main/Notes/Getting%20Started/_01_Leetcode%2032%20-%20Longest%20Valid%20Parenthesis.pdf)
-  * [_99_LeetCode_Problems/_32_LongestValidParenthesis.java](https://github.com/harithanagubady/Data-Structures-and-Algorithms/blob/main/_99_LeetCode_Problems/_32_LongestValidParenthesis.java)
+| Notes        | Problems     |
+|--------------|--------------|
+| [Notes/Getting Started/_01_Leetcode 32 - Longest Valid Parenthesis.pdf](https://github.com/harithanagubady/Data-Structures-and-Algorithms/blob/main/Notes/Getting%20Started/_01_Leetcode%2032%20-%20Longest%20Valid%20Parenthesis.pdf) | [_99_LeetCode_Problems/_32_LongestValidParenthesis.java](https://github.com/harithanagubady/Data-Structures-and-Algorithms/blob/main/_99_LeetCode_Problems/_32_LongestValidParenthesis.java) |
+| [Notes/Getting Started/_02_Leetcode 48 - Rotate Image.pdf](https://github.com/harithanagubady/Data-Structures-and-Algorithms/blob/main/Notes/Getting%20Started/_02_Leetcode%2048%20-%20Rotate%20Image.pdf) | [_99_LeetCode_Problems/_48_RotateImage.java](https://github.com/harithanagubady/Data-Structures-and-Algorithms/blob/main/_99_LeetCode_Problems/_48_RotateImage.java) |
+| [Notes/Getting Started/_03_Leetcode 105 - Binary Tree from Preorder and InOrder.pdf](https://github.com/harithanagubady/Data-Structures-and-Algorithms/blob/main/Notes/Getting%20Started/_03_Leetcode%20105%20-%20Binary%20Tree%20from%20Preorder%20and%20InOrder.pdf) | [_99_LeetCode_Problems/_105_BT_from_In_And_Pre.java](https://github.com/harithanagubady/Data-Structures-and-Algorithms/blob/main/_99_LeetCode_Problems/_105_BT_from_In_And_Pre.java) |
+| [Notes/Getting Started/_04_Leetcode 42 - Trapping Rain Water.pdf](https://github.com/harithanagubady/Data-Structures-and-Algorithms/blob/main/Notes/Getting%20Started/_04_Leetcode%2042%20-%20Trapping%20Rain%20Water.pdf) |[_99_LeetCode_Problems/_43_Trapping_Rain_Water.java](https://github.com/harithanagubady/Data-Structures-and-Algorithms/blob/main/_99_LeetCode_Problems/_43_Trapping_Rain_Water.java)|
 
-- * [Notes/Getting Started/_02_Leetcode 48 - Rotate Image.pdf](https://github.com/harithanagubady/Data-Structures-and-Algorithms/blob/main/Notes/Getting%20Started/_02_Leetcode%2048%20-%20Rotate%20Image.pdf)
-  * [_99_LeetCode_Problems/_48_RotateImage.java](https://github.com/harithanagubady/Data-Structures-and-Algorithms/blob/main/_99_LeetCode_Problems/_48_RotateImage.java)
+# Abdul Bari Algorithms Playlist
+You can find youtube link [**here**](https://youtube.com/playlist?list=PLDN4rrl48XKpZkf03iYFl-O29szjTrs_O&si=3bEHPg_VHNw6DH87)
 
-- * [Notes/Getting Started/_03_Leetcode 105 - Binary Tree from Preorder and InOrder.pdf](https://github.com/harithanagubady/Data-Structures-and-Algorithms/blob/main/Notes/Getting%20Started/_03_Leetcode%20105%20-%20Binary%20Tree%20from%20Preorder%20and%20InOrder.pdf)
-  * [_99_LeetCode_Problems/_105_BT_from_In_And_Pre.java](https://github.com/harithanagubady/Data-Structures-and-Algorithms/blob/main/_99_LeetCode_Problems/_105_BT_from_In_And_Pre.java)
+**Note**: _This notes may contain additional notes from other resources including this playlist_
+###  Notes 1. [_Introduction to Algorithms_](): 
+     Topics include:-     
+          1. Characteristics of Algorithms
+               *  Priori Analysis and posteriori testing
+          2. How to write an algorithm
+          3. How to analyze an algorithm
+          4. Frequency Count Method
+          5. Time Complexity of loops
+          6. Classes of functions
+          7. Asymptotic notations (Big Oh, Omega, Theta)
+          8. Properties of Aymptotic Notations
+                - Reflexive
+                - Transitive
+                - Symmetric
+                - Transpose Symmetric
+          9. Comparison of Functions 
+          10. Best, Worst, Average Case Analysis
 
-- * [Notes/Getting Started/_04_Leetcode 42 - Trapping Rain Water.pdf](https://github.com/harithanagubady/Data-Structures-and-Algorithms/blob/main/Notes/Getting%20Started/_04_Leetcode%2042%20-%20Trapping%20Rain%20Water.pdf)
-  * [_99_LeetCode_Problems/_43_Trapping_Rain_Water.java](https://github.com/harithanagubady/Data-Structures-and-Algorithms/blob/main/_99_LeetCode_Problems/_43_Trapping_Rain_Water.java)
+###  Notes 2. [_Disjoint Set/Union Find_](): 
+     Topics include:-     
+          1. Disjoint sets & operations
+          2. Detecting a cycle
+          3. Graphical Representation
+          4. Array Representation
+          5. Weighted Union & Collapsing Find
+          Additional Notes:-
+          6. Operations on Disjoint Set Data Structure
+              - create
+              - find
+              - union
+          7. Optimizations
+              - Path Compression (or Collapsing Find)
+              - Union by Rank 
+              - Union by Size (or Weighted Union)
+          8. Why choose Union Find over BFS/DFS?
+          9. Job Sequencing Problem
+
+###  Notes 3. [_Divide and Conquer_]():
+     Topics include:-     
+          1. Recurrence relations, Recursion tree method, Substitution/Backward Substitution/Induction method:
+              1. Decreasing functions 
+                  * T(n) = T(n-1) + 1
+                  * T(n) = T(n-1) + n
+                  * T(n) = T(n-1) + log n
+                  * T(n) = 2T(n-1) + 1
+                and Master Theorem for Decreasing functions
+              2. Dividing functions
+                  * T(n) = T(n/2) + 1
+                  * T(n) = T(n/2) + n
+                  * T(n) = 2T(n/2) + n
+                and Master Theorem for Dividing functions
+          2. Recurrence relation for root function
+          3. Problems
+              1. Binary Search
+                  * Iterative method
+                  * Recursive method
+              2. Finding minimum and maximum
+                  * Heap-HeapSort-Heapify-PriorityQueue
+                    -> Array Representation of Binary tree
+                    -> Complete Binary tree
+                    -> Heap
+                    -> Insert & Delete
+                    -> Heap Sort
+                    -> Heapify
+                    -> Priority Queue
+              3. Merge Sort
+                  * Two way Merge Sort - Iterative method
+                  * Merge Sort algorithm
+                  * In-depth analysis
+              4. Quick Sort
+                  * Algorithm
+                  * Analysis
+              5. Strassen's Matrix Multiplication
+                  * Overview
+                  * How to remember Strassen's formula?
