@@ -2,7 +2,6 @@
 
 * ### [DSA Topics](#dsa-topics)
 * ### [DSA Notes](#dsa-notes)
-* ### [Notes vs Problems Mapping](#notes-vs-problems-mapping)
 * ### [Abdul Bari Algorithms Playlist](#abdul-bari-algorithms-playlist)
 
 
@@ -17,10 +16,10 @@ Checkout my article on substack:
 You can find the DSA notes [**here**](https://github.com/harithanagubady/Data-Structures-and-Algorithms/tree/main/Notes)
 
 [**Getting Started**](https://github.com/harithanagubady/Data-Structures-and-Algorithms/tree/main/Notes/Getting%20Started) is where you have all the initial materials to get started for learning DSA.
-It contains an overview of certain topics and some of the random solutions.
+It contains an overview of certain topics and some of the [random problems](#random-problems).
 
 
-# Notes vs Problems Mapping
+## Random Problems
 
 | Notes        | Problems     |
 |--------------|--------------|
