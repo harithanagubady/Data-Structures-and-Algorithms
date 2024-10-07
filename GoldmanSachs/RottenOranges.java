@@ -30,9 +30,15 @@ public class RottenOranges {
             int size = queue.size();
             for(int i = 0 ; i < size ; i++) {
                 int[] point = queue.poll();
-                for(int dir[] : dirs) {
-                    int x = point[0] + dir[0];
-                    int y = point[1] + dir[1];
+                for(int[] dir : dirs) {
+                    int x = 0;
+                    if (point != null) {
+                        x = point[0] + dir[0];
+                    }
+                    int y = 0;
+                    if (point != null) {
+                        y = point[1] + dir[1];
+                    }
                     //if x or y is out of bound
                     //or the orange at (x , y) is already rotten
                     //or the cell at (x , y) is empty

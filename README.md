@@ -3,7 +3,7 @@
 * ### [DSA Topics](#dsa-topics)
 * ### [DSA Notes](#dsa-notes)
 * ### [Abdul Bari Algorithms Playlist](#abdul-bari-algorithms-playlist)
-
+* ### [Arrays and Matrices](#arrays-and-matrices)
 
 # DSA Topics:
 
@@ -21,12 +21,13 @@ It contains an overview of certain topics and some of the [random problems](#ran
 
 ## Random Problems
 
-| Notes        | Problems     |
-|--------------|--------------|
-| [Notes/Getting Started/_01_Leetcode 32 - Longest Valid Parenthesis.pdf](https://github.com/harithanagubady/Data-Structures-and-Algorithms/blob/main/Notes/Getting%20Started/_01_Leetcode%2032%20-%20Longest%20Valid%20Parenthesis.pdf) | [_99_LeetCode_Problems/_32_LongestValidParenthesis.java](https://github.com/harithanagubady/Data-Structures-and-Algorithms/blob/main/_99_LeetCode_Problems/_32_LongestValidParenthesis.java) |
-| [Notes/Getting Started/_02_Leetcode 48 - Rotate Image.pdf](https://github.com/harithanagubady/Data-Structures-and-Algorithms/blob/main/Notes/Getting%20Started/_02_Leetcode%2048%20-%20Rotate%20Image.pdf) | [_99_LeetCode_Problems/_48_RotateImage.java](https://github.com/harithanagubady/Data-Structures-and-Algorithms/blob/main/_99_LeetCode_Problems/_48_RotateImage.java) |
-| [Notes/Getting Started/_03_Leetcode 105 - Binary Tree from Preorder and InOrder.pdf](https://github.com/harithanagubady/Data-Structures-and-Algorithms/blob/main/Notes/Getting%20Started/_03_Leetcode%20105%20-%20Binary%20Tree%20from%20Preorder%20and%20InOrder.pdf) | [_99_LeetCode_Problems/_105_BT_from_In_And_Pre.java](https://github.com/harithanagubady/Data-Structures-and-Algorithms/blob/main/_99_LeetCode_Problems/_105_BT_from_In_And_Pre.java) |
-| [Notes/Getting Started/_04_Leetcode 42 - Trapping Rain Water.pdf](https://github.com/harithanagubady/Data-Structures-and-Algorithms/blob/main/Notes/Getting%20Started/_04_Leetcode%2042%20-%20Trapping%20Rain%20Water.pdf) |[_99_LeetCode_Problems/_43_Trapping_Rain_Water.java](https://github.com/harithanagubady/Data-Structures-and-Algorithms/blob/main/_99_LeetCode_Problems/_43_Trapping_Rain_Water.java)|
+| Notes                                                                                                                                                                                                                                                                  | Problems                                                                                                                                                                                                       |
+|------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
+| [Notes/Getting Started/_01_Leetcode 32 - Longest Valid Parenthesis.pdf](https://github.com/harithanagubady/Data-Structures-and-Algorithms/blob/main/Notes/Getting%20Started/_01_Leetcode%2032%20-%20Longest%20Valid%20Parenthesis.pdf)                                 | [_99_LeetCode_Problems/_32_LongestValidParenthesis.java](https://github.com/harithanagubady/Data-Structures-and-Algorithms/blob/main/_99_LeetCode_Problems/_32_LongestValidParenthesis.java)                   |
+| [Notes/Getting Started/_02_Leetcode 48 - Rotate Image.pdf](https://github.com/harithanagubady/Data-Structures-and-Algorithms/blob/main/Notes/Getting%20Started/_02_Leetcode%2048%20-%20Rotate%20Image.pdf)                                                             | [_04_2D_Arrays/_02_Edit_Given_Matrix/_01_LC48_RotateBy90deg.java](https://github.com/harithanagubady/Data-Structures-and-Algorithms/blob/main/_04_2D_Arrays/_02_Edit_Given_Matrix/_01_LC48_RotateBy90deg.java) |
+| [Notes/Getting Started/_03_Leetcode 105 - Binary Tree from Preorder and InOrder.pdf](https://github.com/harithanagubady/Data-Structures-and-Algorithms/blob/main/Notes/Getting%20Started/_03_Leetcode%20105%20-%20Binary%20Tree%20from%20Preorder%20and%20InOrder.pdf) | [_99_LeetCode_Problems/_105_BT_from_In_And_Pre.java](https://github.com/harithanagubady/Data-Structures-and-Algorithms/blob/main/_99_LeetCode_Problems/_105_BT_from_In_And_Pre.java)                           |
+| [Notes/Getting Started/_04_Leetcode 42 - Trapping Rain Water.pdf](https://github.com/harithanagubady/Data-Structures-and-Algorithms/blob/main/Notes/Getting%20Started/_04_Leetcode%2042%20-%20Trapping%20Rain%20Water.pdf)                                             | [_99_LeetCode_Problems/_43_Trapping_Rain_Water.java](https://github.com/harithanagubady/Data-Structures-and-Algorithms/blob/main/_99_LeetCode_Problems/_43_Trapping_Rain_Water.java)                           |
+
 
 # Abdul Bari Algorithms Playlist
 You can find youtube link [**here**](https://youtube.com/playlist?list=PLDN4rrl48XKpZkf03iYFl-O29szjTrs_O&si=3bEHPg_VHNw6DH87)
@@ -121,3 +122,10 @@ You can find youtube link [**here**](https://youtube.com/playlist?list=PLDN4rrl4
               - Missing edges
           7. Dijkstra Algorithm - Single Source Shortest Path - Greedy method
               - Drawback
+
+# 1. Arrays and Matrices
+
+| Notes                                                                                                                                      | Problems                                                                                                                                                                                                                                           |
+|--------------------------------------------------------------------------------------------------------------------------------------------|----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
+| [Notes/_03_Arrays_and_Matrices](https://github.com/harithanagubady/Data-Structures-and-Algorithms/blob/main/Notes/_03_Arrays_and_Matrices) | [_03_DS_functions_and_arrays](https://github.com/harithanagubady/Data-Structures-and-Algorithms/blob/main/_03_DS_functions_and_arrays), [_04_2D_Arrays](https://github.com/harithanagubady/Data-Structures-and-Algorithms/blob/main/_04_2D_Arrays) |
+

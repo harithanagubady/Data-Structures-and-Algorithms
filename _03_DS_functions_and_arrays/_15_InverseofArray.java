@@ -6,7 +6,7 @@ public class _15_InverseofArray {
         StringBuilder sb = new StringBuilder();
 
         for(int val: a){
-            sb.append(val + "\n");
+            sb.append(val).append("\n");
         }
         System.out.println(sb);
     }

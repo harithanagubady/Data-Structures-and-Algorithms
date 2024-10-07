@@ -1,5 +1,8 @@
 import java.util.*;
 
+/*
+https://www.geeksforgeeks.org/add-two-numbers-represented-by-two-arrays/
+ */
 public class _11_SumofArrays {
 
     public static void main(String[] args) throws Exception {

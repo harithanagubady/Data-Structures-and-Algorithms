@@ -6,7 +6,7 @@ public class _13_ReverseanArray {
         StringBuilder sb = new StringBuilder();
 
         for (int val : a) {
-            sb.append(val + " ");
+            sb.append(val).append(" ");
         }
         System.out.println(sb);
     }
