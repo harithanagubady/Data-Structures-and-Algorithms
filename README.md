@@ -3,7 +3,7 @@
 * ### [DSA Topics](#dsa-topics)
 * ### [DSA Notes](#dsa-notes)
 * ### [Abdul Bari Algorithms Playlist](#abdul-bari-algorithms-playlist)
-* ### [Arrays and Matrices](#arrays-and-matrices)
+* ### [Arrays and Matrices](#1-arrays-and-matrices)
 
 # DSA Topics:
 
