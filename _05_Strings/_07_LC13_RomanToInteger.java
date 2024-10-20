@@ -1,7 +1,7 @@
 import java.util.HashMap;
 import java.util.Map;
 
-public class _08_LC13_RomanToInteger {
+public class _07_LC13_RomanToInteger {
     public static int romanToInt(String s) {
         Map<Character, Integer> m = new HashMap<>();
         m.put('I', 1);

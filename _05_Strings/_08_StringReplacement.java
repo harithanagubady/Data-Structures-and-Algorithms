@@ -1,4 +1,4 @@
-public class StringReplacement {
+public class _08_StringReplacement {
     public static String replaceQuestionMarks(String word, String substr) {
         char[] wordChars = word.toCharArray();
         char[] substrChars = substr.toCharArray();
