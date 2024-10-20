@@ -4,6 +4,7 @@
 * ### [DSA Notes](#dsa-notes)
 * ### [Abdul Bari Algorithms Playlist](#abdul-bari-algorithms-playlist)
 * ### [Arrays and Matrices](#1-arrays-and-matrices)
+* ### [Linked Lists](#2-linked-lists)
 
 # DSA Topics:
 
@@ -127,5 +128,10 @@ You can find youtube link [**here**](https://youtube.com/playlist?list=PLDN4rrl4
 
 | Notes                                                                                                                                      | Problems                                                                                                                                                                                                                                           |
 |--------------------------------------------------------------------------------------------------------------------------------------------|----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| [Notes/_03_Arrays_and_Matrices](https://github.com/harithanagubady/Data-Structures-and-Algorithms/blob/main/Notes/_03_Arrays_and_Matrices) | [_03_DS_functions_and_arrays](https://github.com/harithanagubady/Data-Structures-and-Algorithms/blob/main/_03_DS_functions_and_arrays), [_04_2D_Arrays](https://github.com/harithanagubady/Data-Structures-and-Algorithms/blob/main/_04_2D_Arrays) |
+| [Notes/_03_Arrays_and_Matrices](https://github.com/harithanagubady/Data-Structures-and-Algorithms/blob/main/Notes/_03_Arrays_and_Matrices) | [_03_DS_functions_and_arrays](https://github.com/harithanagubady/Data-Structures-and-Algorithms/blob/main/_03_DS_functions_and_arrays) <br/>[_04_2D_Arrays](https://github.com/harithanagubady/Data-Structures-and-Algorithms/blob/main/_04_2D_Arrays) |
 
+# 2. Linked Lists
+
+| Notes                                                                                                                                      | Problems                                                                                                                                                                                                                                           |
+|--------------------------------------------------------------------------------------------------------------------------------------------|----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
+| [Notes/_04_Linked_Lists](https://github.com/harithanagubady/Data-Structures-and-Algorithms/blob/main/Notes/_04_Linked_Lists)               | [_12_LinkedLists](https://github.com/harithanagubady/Data-Structures-and-Algorithms/blob/main/Notes/_03_Arrays_and_Matrices)                                                                                                                                                                                                                                |
