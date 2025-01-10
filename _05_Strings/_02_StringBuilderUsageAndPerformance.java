@@ -1,7 +1,4 @@
-import java.util.*;
-
-
-public class _03_StringBuilderUsageAndPerformance {
+public class _02_StringBuilderUsageAndPerformance {
 
     public static void main(String[] args) {
         StringBuilder sb = new StringBuilder("Hello");
@@ -14,16 +11,19 @@ public class _03_StringBuilderUsageAndPerformance {
         sb.setCharAt(0, 'h');
         System.out.println("String : " + sb);
         // 4.
-        sb.append(" reader");
+        sb.append("reader");
         System.out.println("String : " + sb);
-        //5.
+        // 5.
+        sb.insert(5, "  ");
+        System.out.println("String : " + sb);
+        //6.
         sb.deleteCharAt(5);
         System.out.println("String : " + sb);
         // 6.
         sb.delete(0, 5);
         System.out.println("String : " + sb);
         // 7.
-        sb.replace(4, 6, "ing");
+        sb.replace(5, 7, "ing");
         System.out.println("String : " + sb);
         // 8.
         String str = sb.toString();

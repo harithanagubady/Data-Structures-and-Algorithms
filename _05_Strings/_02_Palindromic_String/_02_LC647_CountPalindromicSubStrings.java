@@ -1,18 +1,23 @@
-import java.io.*;
-import java.util.*;
+package _02_Palindromic_String;
 
-public class _01_PalindromicSubStrings {
-    public static void solution(String str){
+import java.util.Scanner;
 
+public class _02_LC647_CountPalindromicSubStrings {
+
+    //O(n^2 * m) - m is size of substring
+    public static int solution1BruteForce(String str){
+
+        int count = 0;
         for(int i=0; i<str.length(); i++){
             for(int j=i+1; j<=str.length();j++){
                 String substr = str.substring(i,j);
                 if(isPalindrome(substr)){
+                    count++;
                     System.out.println(substr);
                 }
             }
         }
-
+        return count;
     }
 
     public static boolean isPalindrome (String str){
@@ -31,7 +36,7 @@ public class _01_PalindromicSubStrings {
     public static void main(String[] args) {
         Scanner scn = new Scanner(System.in);
         String str = scn.next();
-        solution(str);
+        System.out.println(solution1BruteForce(str));
     }
 
 }
