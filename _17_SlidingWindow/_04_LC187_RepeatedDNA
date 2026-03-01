@@ -1,0 +1,66 @@
+private static List<String> repeatedDnaSequences(String s, int k, char[] ch, int a) {
+		Map<Character, Integer> map = new HashMap<>();
+		for (int i = 0; i < ch.length; i++) {
+			map.put(ch[i], map.getOrDefault(ch[i], i));
+		}
+		int[] encodedSequence = new int[s.length()];
+
+		int i = 0;
+		for (char c : s.toCharArray()) {
+			encodedSequence[i++] = map.get(c);
+		}
+		long h = computeHash(encodedSequence, k, map, a);
+		Set<Long> hSet = new HashSet<>();
+		hSet.add(h);
+
+		Set<String> seen = new HashSet<>();
+		for (int start = 1; start + k - 1 < encodedSequence.length; start++) {
+			h = h * a - (long)encodedSequence[start - 1] * (long)Math.pow(a, k) + (long)encodedSequence[start + k - 1];
+			if (!hSet.add(h)) {
+				seen.add(s.substring(start, start + k));
+			}
+		}
+		return new ArrayList<>(seen);
+}
+
+private static long computeHash(int[] encodedSequence, int k, Map<Character, Integer> map, int a) {
+  long h = 0;
+  int temp = k;
+  for (int i = 0; i < k; i++) {
+    temp--;
+    h += (long)encodedSequence[i] * (long)Math.pow(a, temp);
+  }
+  return h;
+}
+
+public List<String> findRepeatedDnaSequences2(String s) {
+        
+    if (s.length() < 10) return new ArrayList<>();
+    HashSet<String> seen = new HashSet<>();
+    HashSet<String> res = new HashSet<>();
+    for (int i = 0; i < s.length() - 9; i++) {
+        String str = s.substring(i, i + 10);
+        if (!seen.add(str)) {
+            res.add(str);
+        }
+    }
+    return new ArrayList<>(res);
+}
+
+public List<String> findRepeatedDnaSequences3(String s) {
+        
+    List<String> res = new ArrayList<>();
+    if (s.length() < 10) return res;
+   
+    HashMap<String, Integer> freqMap = new HashMap<>();
+    
+    for (int i = 0; i < s.length() - 9; i++) {
+        String str = s.substring(i, i + 10);
+        int times = freqMap.getOrDefault(str, 0);
+        if (times == 1) {
+            res.add(str);
+        }
+        freqMap.put(str, times + 1);
+    }
+    return res;
+}
